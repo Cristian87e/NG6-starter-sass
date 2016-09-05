@@ -1,24 +1,47 @@
 @import '../common';
 
 .navbar {
-  height: 6.5rem;
+  position: fixed;
+  top: $headerHeight;
+  bottom: 0;
+  left: 0;
+  width: $sidebarWidth;
   background-color: $primaryColor;
   padding: 1rem;
 
-  .nav-links,
-  .logo {
-    display: inline-block;
-  }
-
-  .logo {
-    color: $lightTextColor;
-    margin-right: 50%;
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0.5rem 0 1.5rem;
   }
 
   .nav-links {
-    span {
+    a {
       color: $lightTextColor;
-      font-size: 1.6rem;
+      font-size: 1rem;
+    }
+  }
+
+  .planets-list {
+
+    .title {
+      font-weight: normal;
+      color: $lightTextColor;
+    }
+
+    .items {
+      list-style: none;
+    }
+
+    .item {
+      color: $lightTextColor;
+      font-size: 1rem;
+      padding: 0.5rem;
+      cursor: pointer;
+      transition: background-color 500ms ease;
+      &:hover {
+        background-color: rgba($lightTextColor, 0.2);
+      }
     }
   }
 }

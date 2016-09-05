@@ -1,7 +1,20 @@
+@import '../common';
+
 .header {
-  dislpay: flex;
+  display: flex;
+  justify-content: space-around;
+  height: $headerHeight;
+  color: $darkTextColor;
+  font-size: 1.8em;
+  line-height: 40px;
+}
+
+.toggler {
+  flex-grow: 1;
 }
 
 .title {
+  flex-grow: 1;
+  margin: 0;
   text-transform: uppercase;
 }
