@@ -8,6 +8,11 @@
   width: $sidebarWidth;
   background-color: $primaryColor;
   padding: 1rem;
+  transition: transform 500ms ease;
+
+  &.hide {
+    transform: translateX(-100%);
+  }
 
   .nav {
     display: flex;

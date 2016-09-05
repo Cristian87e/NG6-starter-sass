@@ -1,5 +1,5 @@
-<header class="header"></header>
-<navbar class="navbar"></navbar>
+<header class="header" ng-click="vm.toggleNavbar()"></header>
+<navbar class="navbar" ng-class="{'hide': !vm.showNavbar}"></navbar>
 <main>
   Main Section
 </main>
